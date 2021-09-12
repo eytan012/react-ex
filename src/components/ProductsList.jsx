@@ -1,11 +1,11 @@
 import axios from 'axios';
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { successAlert, errorAlert } from '../utils/alerts';
 
 const ProductsList = ({ products, setProducts }) => {
     const apiUrl = "http://localhost:3007/products"
     const handleDelete = async (item, index) => {
-
         try {
             const req = await axios.delete(`${apiUrl}/${item.id}`)
             if (req.status === 200) {
@@ -25,7 +25,7 @@ const ProductsList = ({ products, setProducts }) => {
     }
     return (
         <div className="container-fluid bg-trasparent my-4 p-3" style={{ position: 'relative' }}>
-            <div className="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-5 g-3">
+            <div className="row row-cols-1 row-cols-xs-2 row-cols-sm-3 row-cols-lg-5 g-3">
                 {products.length > 0 ? (
                     products.map((product, index) => {
                         return (
@@ -35,12 +35,14 @@ const ProductsList = ({ products, setProducts }) => {
                                     <div className="card-body">
                                         <div className="clearfix mb-3">
                                             <span className="float-start badge rounded-pill bg-primary">{product.brand}</span>
-                                            <span className="float-end price-hp">{product.price}</span>
+                                            <span className="float-end price-hp">{product.price}$</span>
                                         </div>
                                         <h5 className="card-title">{product.name.toUpperCase()}</h5>
                                         <div className="editAddButtons d-flex justify-content-between">
                                             <span onClick={() => handleDelete(product, index)} style={{ cursor: 'pointer' }}><i className="fas fa-trash-alt text-danger"></i></span>
-                                            <span onClick={handleEdit} style={{ cursor: 'pointer' }}><i className="far fa-edit text-primary"></i></span>
+                                          <Link to={`/edit/${product.id}`} product={product}>
+                                          <span style={{ cursor: 'pointer' }}><i className="far fa-edit text-primary"></i></span>
+                                          </Link>
                                         </div>
                                     </div>
                                 </div>
