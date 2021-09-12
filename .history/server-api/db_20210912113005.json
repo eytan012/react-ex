@@ -1,0 +1,15 @@
+{
+    "products":[
+        {
+            "id": "123",
+            "name": "z-flip",
+            "brand": "Samsung",
+            "price": "1500$",
+            imgUrl:""
+        },
+        {
+            "id": "1234",
+
+        }
+    ]
+}

@@ -1,0 +1,36 @@
+{
+    "products":[
+        {
+            "id": "1000",
+            "name": "z-flip",
+            "brand": "Samsung",
+            "price": "1500$",
+            "imgUrl":"https://www.theme-junkie.com/wp-content/uploads/tumblr-mobile-theme-660x440.png"
+        },
+        {
+            "id": "1001",
+            "name": "z-flip",
+            "brand": "Samsung",
+            "price": "1500$",
+            "imgUrl":"https://www.theme-junkie.com/wp-content/uploads/tumblr-mobile-theme-660x440.png"
+        },        {
+            "id": "1002",
+            "name": "z-flip",
+            "brand": "Samsung",
+            "price": "1500$",
+            "imgUrl":"https://www.theme-junkie.com/wp-content/uploads/tumblr-mobile-theme-660x440.png"
+        },        {
+            "id": "1003",
+            "name": "z-flip",
+            "brand": "Samsung",
+            "price": "1500$",
+            imgUrl:"https://www.theme-junkie.com/wp-content/uploads/tumblr-mobile-theme-660x440.png"
+        },        {
+            "id": "1004",
+            "name": "z-flip",
+            "brand": "Samsung",
+            "price": "1500$",
+            imgUrl:"https://www.theme-junkie.com/wp-content/uploads/tumblr-mobile-theme-660x440.png"
+        }
+    ]
+}

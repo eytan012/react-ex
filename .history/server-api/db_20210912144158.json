@@ -1,0 +1,36 @@
+{
+    "products":[
+        {
+            "id": "1000",
+            "name": "z-flip",
+            "brand": "Samsung",
+            "price": "1500$",
+            "imgUrl":"https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-z-flip-01.jpg"
+        },
+        {
+            "id": "1001",
+            "name": "iPhone X",
+            "brand": "Apple",
+            "price": "1000$",
+            "imgUrl":"https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-x.jpg"
+        },        {
+            "id": "1002",
+            "name": "iPhone 12",
+            "brand": "Apple",
+            "price": "2000$",
+            "imgUrl":"https://www.theme-junkie.com/wp-content/uploads/tumblr-mobile-theme-660x440.png"
+        },        {
+            "id": "1003",
+            "name": "Mi 10 Lite",
+            "brand": "Xiaomi",
+            "price": "500$",
+            "imgUrl":"https://www.theme-junkie.com/wp-content/uploads/tumblr-mobile-theme-660x440.png"
+        },        {
+            "id": "1004",
+            "name": "Galaxy S20 Plus",
+            "brand": "Samsung",
+            "price": "1050$",
+            "imgUrl":"https://www.theme-junkie.com/wp-content/uploads/tumblr-mobile-theme-660x440.png"
+        }
+    ]
+}
