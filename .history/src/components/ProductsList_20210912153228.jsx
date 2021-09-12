@@ -15,7 +15,7 @@ const ProductsList = ({ products, setProducts }) => {
     return (
         <div className="container-fluid bg-trasparent my-4 p-3" style={{ position: 'relative' }}>
             <div className="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-5 g-3">
-                {products.length > 0 ? (
+                {products ? (
                     products.map((product, index) => {
                         return (
                             <div className="col" key={product.id}>
@@ -36,7 +36,7 @@ const ProductsList = ({ products, setProducts }) => {
                             </div>
                         )
                     })
-                ) : <p>Sorry, no products to show..</p>}
+                ) : <p>Sorry, no products..</p> ""}
 
             </div>
         </div>

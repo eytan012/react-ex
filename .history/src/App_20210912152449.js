@@ -26,9 +26,9 @@ function App() {
 
   const titleText = "List of mobile phones";
   const loadingSpinner = (
-    <div className="d-flex justify-content-center mt-5 my-4">
-      <div className="spinner-border" role="status">
-        <span className="visually-hidden">Loading...</span>
+    <div class="d-flex justify-content-center">
+      <div class="spinner-border" role="status">
+        <span class="visually-hidden">Loading...</span>
       </div>
     </div>
   )

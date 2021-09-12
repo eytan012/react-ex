@@ -22,19 +22,19 @@ function App() {
       alert(err.message)
     }
 
-  };
-
-  const titleText = "List of mobile phones";
-  const loadingSpinner = (
-    <div className="d-flex justify-content-center mt-5 my-4">
-      <div className="spinner-border" role="status">
-        <span className="visually-hidden">Loading...</span>
+    const loadingFunc = () => (
+      <div class="d-flex justify-content-center">
+        <div class="spinner-border" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
       </div>
-    </div>
-  )
+    )
+
+  };
+  const titleText = "List of mobile phones";
   return (
     <>
-      {isLoading ? loadingSpinner : (
+      {isLoading ? loadingFunc() : (
         <div className="container-fluid">
           <h5 className="my-4 text-center">{titleText}</h5>
           <ProductsList products={products} setProducts={setProducts} />

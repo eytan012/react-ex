@@ -36,7 +36,7 @@ const ProductsList = ({ products, setProducts }) => {
                             </div>
                         )
                     })
-                ) : <p>Sorry, no products to show..</p>}
+                ) : <p>Sorry, no products..</p>}
 
             </div>
         </div>
