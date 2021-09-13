@@ -225,7 +225,5 @@ footer {
     margin-right: 13px;
 }
 @media only screen and (min-width: 980px) {
-    .addButton{
-        margin-right: 20%;
-    }    
+    h3:after {content: ' - DESKTOP'; display: inline;}
 }

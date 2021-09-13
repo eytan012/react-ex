@@ -16,9 +16,9 @@ const Home = ({ products, setProducts, isLoading, setIsLoading }) => {
       {isLoading ? loadingSpinner : (
         <div className="container-fluid">
           <h5 className="my-4 text-center">{titleText}</h5>
-          <div className="addButton d-flex justify-content-end">
+          <div className="addButton d-flex justify-content-start">
             <Link to={"/add"}>
-            <button type="button" className="btn btn-info text-white">Add Product</button>
+            <button type="button" className="btn btn-info text-white">Add</button>
             </Link>
           </div>
           <div>
