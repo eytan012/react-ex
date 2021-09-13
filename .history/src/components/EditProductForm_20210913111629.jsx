@@ -4,6 +4,7 @@ import { useParams, useHistory } from "react-router-dom";
 
 const EditProductForm = ({ products }) => {
   const { id } = useParams();
+  // const location = useLocation();
   const history = useHistory();
   const [productToEdit, setProductToEdit] = useState({});
   useEffect(() => {
@@ -14,6 +15,7 @@ const EditProductForm = ({ products }) => {
     const productId = id;
     try {
       const req = await axios.get(`http://localhost:3007/products/${productId}`)
+      console.log(req.data);
       setProductToEdit(req.data)
     } catch (error) {
       console.log('error getProductById:',error);
@@ -25,6 +27,7 @@ const EditProductForm = ({ products }) => {
   const handleSaveChanges = async () => {
     try {
       const req = await axios.put(`http://localhost:3007/products/${id}`,productToEdit);
+      console.log(req);
       if(req.status === 200 || req.status === 201) history.push('/')
     } catch (error) {
       console.log(error);

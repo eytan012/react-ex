@@ -4,6 +4,7 @@ import { useParams, useHistory } from "react-router-dom";
 
 const EditProductForm = ({ products }) => {
   const { id } = useParams();
+  // const location = useLocation();
   const history = useHistory();
   const [productToEdit, setProductToEdit] = useState({});
   useEffect(() => {
